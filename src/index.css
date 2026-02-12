@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Self-hosted Arial font */
+@font-face {
+  font-family: "Arial";
+  src: url("/fonts/Arial.woff2") format("woff2"),
+       url("/fonts/Arial.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply Arial globally */
+body {
+  @apply font-arial;
+}
