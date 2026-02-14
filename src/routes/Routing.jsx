@@ -8,11 +8,7 @@ import AppLayout from "../layout/AppLayout";
 import Home from "../pages/Home/Home";
 import ContactPage from "../pages/ContactUs/Contact";
 import AboutPage from "../pages/about/AboutPage";
-import CareerPage from "../pages/Career/CareerPage";
-import BlogPage from "../pages/Blog/BlogPage";
 import Gallery from "../pages/Gallery/Gallery";
-import Products from "../pages/Products/Products";
-import ProductDetail from "../pages/Products/DetailsPage";
 import CertificationPage from "../pages/Certification/CertificationPage";
 
 const router = createBrowserRouter([

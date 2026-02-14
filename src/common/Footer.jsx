@@ -1,5 +1,6 @@
 import { FaFacebookF, FaInstagram, FaTwitter, FaPhone, FaEnvelope, FaMapMarkerAlt, FaPinterestP, FaWhatsapp } from "react-icons/fa";
 import { RiCustomerService2Fill } from "react-icons/ri";
+import {Link} from "react-router-dom"
 
 const Footer = () => {
   const quickLinks = ["Home", "About", "Gallery", "Contact Us"];
@@ -27,8 +28,13 @@ const Footer = () => {
           {/* 1️⃣ Brand Section */}
           <div className="flex flex-col gap-6">
             <div className="flex flex-col">
-              <h2 className="text-4xl font-bold text-[#F4E4BC] font-serif tracking-wider">Alika</h2>
-              <p className="text-2xl font-light text-[#D4AF37] tracking-[0.3em] font-serif">PARLOUR</p>
+              <Link to="/" className="inline-block">
+  <img
+    src="/assets/images/Logo/alika-logo.jpeg"   // apni image ka path yaha do
+    alt="Alika Parlour"
+    className="object-contain w-auto h-20"
+  />
+</Link>
               <div className="w-16 h-1 mt-2 bg-gradient-to-r from-[#D4AF37] to-transparent"></div>
             </div>
             
@@ -128,7 +134,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="font-medium text-[#F4E4BC]">Call Us</p>
-                    <p className="mt-1 text-sm text-gray-300">+91 123 456 7890</p>
+                    <p className="mt-1 text-sm text-gray-300">+91 85958 08780</p>
                     {/* <p className="text-xs text-[#D4AF37] mt-1 flex items-center gap-1">
                       <RiCustomerService2Fill /> 24/7 Customer Support
                     </p> */}
@@ -137,13 +143,13 @@ const Footer = () => {
               </li>
               
               <li className="group">
-                <a href="mailto:info@alika.com" className="flex items-start gap-3 p-3 transition-all duration-300 rounded-lg hover:bg-white/5">
+                <a href="mailto:makeupbyalikasachan@gmail.com" className="flex items-start gap-3 p-3 transition-all duration-300 rounded-lg hover:bg-white/5">
                   <div className="p-2 rounded-full bg-[#D4AF37]/20 group-hover:bg-[#D4AF37]/30 transition">
                     <FaEnvelope className="text-[#D4AF37]" />
                   </div>
                   <div>
                     <p className="font-medium text-[#F4E4BC]">Email Us</p>
-                    <p className="mt-1 text-sm text-gray-300">info@alikaparlour.com</p>
+                    <p className="mt-1 text-sm text-gray-300">makeupbyalikasachan@gmail.com</p>
                     {/* <p className="text-sm text-gray-300">bookings@alikaparlour.com</p> */}
                   </div>
                 </a>

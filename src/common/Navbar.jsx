@@ -36,9 +36,20 @@ const Navbar = () => {
         <div className="flex items-center justify-between px-6 mx-auto max-w-7xl">
 
           {/* LOGO */}
-          <div className="text-2xl font-bold cursor-pointer">
-            <span className="text-[#1F3B28]">Alika</span>
-            <span className="text-[#D4AF37]">Parlor</span>
+          <div className="cursor-pointer">
+ <Link
+  to="/"
+  className="flex items-center transition-all duration-300 hover:scale-105"
+>
+  <img
+    src="/assets/images/Logo/alika-website-logo.png"
+    alt="Alika Parlour"
+    className={`object-contain drop-shadow-md transition-all duration-300 ${
+      scrolled ? "h-10" : "h-14"
+    }`}
+  />
+</Link>
+
           </div>
 
           {/* DESKTOP MENU */}
